@@ -1,3 +1,3 @@
 # assignment-team-website
 
-![test image size](images/20170922_column.png){:class="img-responsive"}
+![test image size](images/20170922_column.png?s=200)
