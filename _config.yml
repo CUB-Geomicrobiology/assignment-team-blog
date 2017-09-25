@@ -1,3 +1,4 @@
 blogtitle: "It's a Winogradsky Life" # TODO: give your blog a title
 baseurl: "/assignment-team-blog" # TODO: replace with the name of your team's blog repository
-imageurl: "/images" # this is the location of the images
+imageurl: "/images" # this is the location of the images, don't change
+permalink: /:title/ # location of the blog entries, don't change
