@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.blogtitle }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheet.css">
+    {% if page.css %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/{{ page.css }}">{% endif %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: {extensions:["mhchem.js"]}});</script>
+    <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({
+         tex2jax: {
+           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+           processEscapes: true
+         }
+       });
+    </script>
+  </head>
+  <body data-spy="scroll" data-target="#toc">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
+        </div>
+        <div class="col-sm-9">
+          {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+          {{ content }}
+          <br/>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
