@@ -30,4 +30,8 @@ date: 2017-12-01
 
 ## Conclusion
 
-> For the last entry, consider also how the different conditions have developed overall. Did they behave as you expected? Did they turn out differently? How would you expect them to develop from here on out?
+> For the last entry, consider also how the different conditions have developed overall. For example:
+ - Did they behave as you expected?
+ - Did they turn out differently?
+ - How would you expect them to develop from here on out?
+ - How do your Winogradsky columns compare to the other teams'?
