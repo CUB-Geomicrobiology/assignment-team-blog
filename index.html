@@ -4,7 +4,7 @@ permalink: /
 ---
 
 {% for p in site.pages %}
-{% if p.title and p.url <> "/" %}
+{% if p.title and p.url <> "/" and p.date %}
 <h1 align="center"><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></h1>
 <h4 align="center"><strong>{{ p.date | date: "%-d %B %Y" }}</strong></h4>
 {{ p.content }}
