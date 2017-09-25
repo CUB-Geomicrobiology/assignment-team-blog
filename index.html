@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: /
+---
+
+{% for p in site.pages %}
+{% if p.title and p.url <> "/" %}
+<h1 align="center"><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></h1>
+<h4 align="center"><strong>{{ p.date | date: "%-d %B %Y" }}</strong></h4>
+{{ p.content }}
+{% endif %}
+{% endfor %}

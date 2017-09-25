@@ -19,22 +19,28 @@ nav[data-toggle='toc'] {
 
 /* image styles */
 
-.image-container {
+.figure-container {
   padding-left: 10px;
   padding-top: 5px;
   padding-right: 10px;
   padding-bottom: 0px;
 }
 
-.image-caption {
+.figure-block {
+  display: inline-block;
+}
+
+figure {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+figcaption {
   padding-top: 5px;
   padding-bottom: 0px;
   text-align: center;
   font-style: italic;
-}
-
-.image-block {
-  display: inline-block;
 }
 
 .gap-right {

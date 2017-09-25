@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{% for post in site.pages | where:'date' | sort: 'date' %}
+  {% if post.url == page.url %}
+    {% assign post_index0 = forloop.index0 %}
+    {% assign post_index1 = forloop.index %}
+  {% endif %}
+{% endfor %}
+{% for post in site.pages | sort: 'date' %}
+  {% if post_index0 == forloop.index %}
+    {% assign next_post = post %}
+  {% endif %}
+  {% if post_index1 == forloop.index0 %}
+    {% assign prev_post = post %}
+  {% endif %}
+{% endfor %}
+
+<h1 align="center">
+{% if next_post.url and next_post.url <> "/" %}
+  <a href="{{ site.baseurl }}{{ next_post.url }}"><span class="glyphicon glyphicon-chevron-left"></span></a>
+{% endif %}
+{{ page.title }}
+{% if prev_post.url and prev_post.url <> "/" %}
+  <a href="{{ site.baseurl }}{{ prev_post.url }}"><span class="glyphicon glyphicon-chevron-right"></span></a>
+{% endif %}
+</h1>
+
+<h4 align="center"><strong>{{ page.date | date: "%-d %B %Y" }}</strong></h4>
+
+{{ content }}
