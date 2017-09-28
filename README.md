@@ -7,7 +7,7 @@ The big team assignment for the semester is to follow the development of your Wi
 When your team first starts this assignment, there is a small bit of setup required:
 
 1. Edit the [`_config.yml`](_config.yml) file to update the `blogtitle` (be creative, this is the name of your blog) and `baseurl` (this is simply the name of this repository which should be something along the lines of `blog-your-team-name`).
-2. Now your blog should be available at `https://2017-geomicrobiology.github.io/blog-your-team-name` (with the last part the `baseurl` you just entered).
+2. Now your blog should be available at `https://2017-geomicrobiology.github.io/blog-your-team-name` (with the last part the `baseurl` you just entered). Note that if you did not correctly adjust the `baseurl` in step #1 above, this page will still display but images and formatting will not work as expected! (mostly, your own images won't show so if this happens, check first that the `baseurl` was adjusted correctly).
 3. Note that the main branch for this assignment is `gh-pages` instead of `master`, this is because we want your blog to be visible as a website. You can still use branches as much as you like when you work on this as a team, just merge individual branches into `gh-pages` instead of `master` (revisit the [Intro Team Video tutorial for a refresher on branches](https://youtu.be/k2NjjQxFEuA)).
 4. Note that updates to the `.md` file may take 30-60s to become visible at the website address for your team (this is because the website is re-generated automatically after every commit) and will always reflect the `gh-pages` branch.
 
